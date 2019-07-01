@@ -13,17 +13,17 @@ unzip install.zip
 chown -R www-data:www-data /www
 
 #
-#php install/cli_install.php install \
-#--db_hostname 127.0.0.1 \
-#--db_username $MYSQL_USER \
-#--db_password $MYSQL_PASSWORD \
-#--db_database $MYSQL_DATABASE \
-#--db_driver mysqli \
-#--db_port 8083 \
-#--username admin \
-#--password admin \
-#--email admin@localhost.com \
-#--http_server http://localhost/
+php install/cli_install.php install \
+--db_hostname 127.0.0.1 \
+--db_username $MYSQL_USER \
+--db_password $MYSQL_PASSWORD \
+--db_database $MYSQL_DATABASE \
+--db_driver mysqli \
+--db_port 3306 \
+--username admin \
+--password admin \
+--email admin@localhost.com \
+--http_server http://irk3n-wrt.ddns.net/
 
 # jwilder/nginx-proxy support
 SERVER_NAME=${VIRTUAL_HOST:-${SERVER_NAME:-localhost}}

@@ -67,7 +67,7 @@ RUN apk --no-cache --update add bash bash-completion
 
 # Runtime env vars are envstub'd into config during entrypoint
 ENV SERVER_NAME="localhost"
-ENV SERVER_ALIAS=""
+ENV SERVER_ALIAS="irk3n-wrt.ddns.net"
 ENV SERVER_ROOT=/www
 
 # Alias defaults to empty, example usage:
