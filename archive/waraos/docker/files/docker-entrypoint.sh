@@ -19,7 +19,7 @@ php install/cli_install.php install \
 --db_password $MYSQL_PASSWORD \
 --db_database $MYSQL_DATABASE \
 --db_driver mysqli \
---db_port 3306 \
+--db_port 33060 \
 --username admin \
 --password admin \
 --email admin@localhost.com \
