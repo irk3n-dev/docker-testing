@@ -15,11 +15,11 @@ chown -R www-data:www-data /www
 #
 php install/cli_install.php install \
 --db_hostname 127.0.0.1 \
---db_username $MYSQL_USER \
---db_password $MYSQL_PASSWORD \
---db_database $MYSQL_DATABASE \
+--db_username ${MYSQL_USER} \
+--db_password ${MYSQL_PASSWORD} \
+--db_database ${MYSQL_DATABASE} \
 --db_driver mysqli \
---db_port 33060 \
+--db_port 3306 \
 --username admin \
 --password admin \
 --email admin@localhost.com \
